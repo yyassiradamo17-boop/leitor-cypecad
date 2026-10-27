@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 619 >>
+stream
+BT
+/F1 7 Tf
+8.75 TL
+30 805 Td
+(CYPECAD 2025 \227 Listagem de dados da obra) '
+(Obra: Edif\355cio de habita\347\343o \(exemplo\)) '
+() '
+(VERIFICA\307\303O AO PUN\307OAMENTO \227 LAJES MACI\307AS) '
+(Esfor\347o de pun\347oamento de c\341lculo por pilar) '
+() '
+(Pilar  Planta  Espessura \(cm\)  VEd \(kN\)  Armadura de pun\347oamento) '
+(------------------------------------------------------------------) '
+(P2     Piso 3              25     410.0  \227) '
+(P5     Piso 3              25     395.0  \227) '
+(P2     Piso 4              25     280.0  \227) '
+(P5     Piso 4              25     270.0  \227) '
+() '
+() '
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000210 00000 n 
+0000000336 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1006
+%%EOF
