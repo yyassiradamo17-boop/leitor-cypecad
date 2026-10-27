@@ -22,4 +22,8 @@ Abra o site e use **Carregar exemplo (2 revisões)**, ou arraste os ficheiros da
 
 - Precisa de ligação à Internet para as bibliotecas de PDF (pdf.js), Excel (SheetJS) e ZIP (JSZip), servidas pela cdnjs.
 - Os resultados da verificação independente são de apoio ao projecto e devem ser confirmados pelo projectista. Os efeitos de 2.ª ordem em pilares não estão incluídos.
-- Os botões de envio para as calculadoras «Dimensionamento BA · EC2» e «Seletor de Armaduras» funcionam quando essas ferramentas estão disponíveis no endereço indicado em **Definições › Ligação às ferramentas**.
+- Os botões de envio abrem as calculadoras publicadas já preenchidas com os esforços:
+  - [Dimensionamento BA · EC2](https://yyassiradamo17-boop.github.io/EC2BAMosley.html/)
+  - [Seletor de Armaduras](https://yyassiradamo17-boop.github.io/Seletor-de-armaduras/)
+
+  Os endereços podem ser alterados em **Definições › Ligação às ferramentas**. O navegador tem de permitir janelas pop-up para o leitor.

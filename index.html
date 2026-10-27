@@ -1668,10 +1668,12 @@ const DEF = {fck: 30, fyk: 500, gc: 1.5, gs: 1.15, acc: 1.0, cover: 30, phiW: 8,
   coverSlab: 25, phiSlab: 12, rhoSlab: 0.005, betaPunch: 1.15, coverFund: 50, phiFund: 16, gMean: 1.40, sigAdm: 300,
   tol: 10, revTol: 5, nsign: 'auto', units: 'auto', xlim: 0.45, cotMax: 2.5, imperf: true,
   gG: 1.35, gQ: 1.5, psi0Q: 0.7, psi2Q: 0.3, autoComb: true, defB: 300, defH: 500, minPil: 4.52,
-  paths: {ec2: 'Dimensionamento_BA_EC2.html', sel: 'Seletor de Armaduras.html'}};
+  paths: {ec2: 'https://yyassiradamo17-boop.github.io/EC2BAMosley.html/', sel: 'https://yyassiradamo17-boop.github.io/Seletor-de-armaduras/'}};
+/* caminhos relativos antigos (versão local) → endereços publicados */
+const OLD_PATHS = {ec2: 'Dimensionamento_BA_EC2.html', sel: 'Seletor de Armaduras.html'};
 const ST = CY.ST = {files: [], tables: [], forces: [], reinf: [], quant: [], env: [], ver: [], geom: {}, view: 'imp',
   S: JSON.parse(JSON.stringify(DEF)), filt: {esfKind: '', verG: '', tabType: ''}, meta: {obra: '', cliente: '', autor: '', rev: '', local: '', notas: ''}};
-try { const s = JSON.parse(localStorage.getItem('cype-reader-settings') || 'null'); if (s) { Object.assign(ST.S, s); ST.S.paths = Object.assign({}, DEF.paths, s.paths || {}); } } catch (e) {}
+try { const s = JSON.parse(localStorage.getItem('cype-reader-settings') || 'null'); if (s) { Object.assign(ST.S, s); ST.S.paths = Object.assign({}, DEF.paths, s.paths || {}); Object.keys(OLD_PATHS).forEach(k => { if (!ST.S.paths[k] || ST.S.paths[k] === OLD_PATHS[k]) ST.S.paths[k] = DEF.paths[k]; }); } } catch (e) {}
 try { const m = JSON.parse(localStorage.getItem('cype-reader-meta') || 'null'); if (m) Object.assign(ST.meta, m); } catch (e) {}
 const saveSettings = () => { try { localStorage.setItem('cype-reader-settings', JSON.stringify(ST.S)); localStorage.setItem('cype-reader-meta', JSON.stringify(ST.meta)); } catch (e) {} };
 
