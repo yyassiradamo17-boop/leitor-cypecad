@@ -8,9 +8,9 @@ Ferramenta web que lê as listagens exportadas do CYPECAD e transforma-as em dad
 2. **Reconhecer** as tabelas: elemento, planta, combinação ou hipótese, posição, N, Mx, My, Qx, Qy, T, armaduras, geometria e medições, com conversão de unidades.
 3. **Estruturar** os dados, exportáveis em JSON (sessão), Excel ou CSV.
 4. **Usar** os dados:
-   - envolventes e valores críticos por elemento;
-   - verificação independente EC2 (vigas, pilares em flexão desviada, punçoamento, sapatas, muros por metro), com diferenças acima da tolerância assinaladas;
-   - quantidades (betão, cofragem, aço por diâmetro) por bloco ou revisão;
+   - envolventes e valores críticos por elemento, incluindo os **diagramas de esforços das vigas** lidos dos PDF do CYPECAD (M, V, T por pórtico e tramo);
+   - verificação independente EC2 pelo **método das calculadoras EC2** (Mosley, Bungey & Hulse: 7.2.1/7.2.2, 7.6, 9.6, 10.1, 8.1.1) ou pelo EC2 genérico, com filtros para ver só os elementos insuficientes ou com excesso;
+   - quantidades (betão, cofragem, aço por diâmetro) por bloco ou revisão, com somatório por tipo de elemento e conferência com os totais da listagem;
    - comparação entre revisões;
    - memória de cálculo em HTML, PDF ou Word (.docx).
 
